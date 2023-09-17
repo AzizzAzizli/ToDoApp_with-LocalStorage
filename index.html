@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/bootstrap-min.css">
+    <link rel="stylesheet" href="./src/style/style.css">
+    <title>ToDo</title>
+</head>
+<body>
+    <header style="height: 70px;" class=" position-sticky top-0 z-2 d-flex w-100 text-light bg-info align-items-center justify-content-between">
+        <h1 class="fs-5 fw-medium  ps-3">To Do App</h1>
+        <nav class="pt-2">
+          <ul class="pe-3 d-flex gap-5 align-items-center ">
+            <li><a target="_blank" class="fw-medium" href="https://www.linkedin.com/in/aziz-azizli-3ba24a28a/">Linkedin </a></li>
+            <li><a target="_blank" class="fw-medium"   href="https://github.com/AzizzAzizli">Git Hub</a></li>
+  
+          </ul>
+        </nav>
+      </header>
+
+
+      
+<main class="w-100  d-flex justify-content-center align-items-center">
+<div class="container row    justify-content-center align-items-center ">
+  <div class="content   d-flex justify-content-center align-items-center col-sm-10 col-md-8 col-xl-6 col-12 flex-column  gap-3 ">
+        <div class=" w-100 d-flex gap-3">
+            <input type="text" placeholder="Write..." class="input rounded-3 w-100 p-2 border-0"> <button id="addBtn" class="btn btn-warning">Add</button>
+        </div>
+        <div class="w-100 d-flex justify-content-end">
+            <button onclick="clearAll()" class="clearBtn btn btn-secondary">Clear all</button>
+        </div>
+<ul class="list bg-light p-3 rounded-3 w-100 d-flex flex-column gap-3"> 
+<!-- <div class="d-flex gap-3">
+<li class="d-flex w-100 fs-5 fw-medium">1) aAaaa</li> <button class="btn btn-outline-danger">Delete</button> <button class="btn btn-outline-primary">Edit</button>
+</div> -->
+
+</ul>
+
+<div id="editDiv" class="position-fixed d-none w-100 mt-5 d-flex justify-content-center align-items-center row " style="height: 120vh; background-color: rgba(0, 0, 0, 0.349);">
+    <div class=" col-10 col-lg-4 col-md-6 col-sm-8  d-flex flex-column gap-3 bg-warning p-3 rounded-3">
+       <input id="editInput" type="text" class="p-2 rounded-3 border-0" placeholder="Edit...">
+       <button class="btn btn-primary"  id="saveBtn">Save</button>
+    </div>
+</div>
+
+        </div>
+
+
+
+</div>
+
+</main>
+
+
+
+
+
+
+
+
+    <script src="./src/js/jquery-3-7-1-min.js"></script>
+    <script src="./src/js/index.js"></script>
+
+</body>
+</html>
