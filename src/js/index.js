@@ -81,17 +81,6 @@ function clearAll() {
   renderList();
 }
 
-// function lineThrough(element, index) {
-//     element.classList.toggle("line-through-text");
-//     toDoData[index][1] = !toDoData[index][1];
-//     localStorage.setItem("toDoData", JSON.stringify(toDoData));
-// }
-// $(document).ready(function () {
-//   $("#editBtn").on("click", function () {
-  
-//     showEditDiv()
-//   });
-// });
 
 function showEditDiv(value,index){
     $("#editDiv").removeClass("d-none");
